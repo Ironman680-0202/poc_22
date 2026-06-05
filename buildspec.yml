@@ -22,7 +22,7 @@ phases:
       - ssh -i key.pem -o StrictHostKeyChecking=no ubuntu@13.60.214.253 '
           if [ ! -d "poc22-nodejs-app" ]; then
             git clone https://github.com/Ironman680-0202/poc_22.git;
-          fi
+          fi;
           cd poc22-nodejs-app &&
           git pull &&
           npm install &&
